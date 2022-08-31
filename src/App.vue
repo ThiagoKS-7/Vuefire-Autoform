@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    {{ firebaseData }}
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { db } from './firebase';
+const documentPath = 'contacts/jeff';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data() {
+    return {
+      firebaseData: null,
+    }
+  },
+
+  firestore() {
+    return {
+      firebaseData: db.doc(documentPath),
+    }
+  },
 }
 </script>
 
@@ -26,3 +35,28 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<!-- <template>
+  <div id="app">
+    {{ firebaseData }}
+  </div>
+</template>
+
+<script>
+import { db } from './firebase';
+const documentPath = 'contacts/jeff';
+
+export default {
+  data() {
+    return {
+      firebaseData: null,
+    }
+  },
+
+  firestore() {
+    return {
+      firebaseData: db.doc(documentPath),
+    }
+  },
+};
+</script> -->
