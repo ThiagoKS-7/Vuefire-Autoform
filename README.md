@@ -1,4 +1,4 @@
-# autoform1
+# Vuefire Autosavable form
 
 ## Project setup
 ```
