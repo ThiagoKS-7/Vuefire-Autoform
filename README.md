@@ -1,6 +1,5 @@
 # Vuefire Autosavable form
-![image](https://user-images.githubusercontent.com/83460816/188241575-6b06b285-5b82-499d-859e-e16c8b5b0e73.png)
-
+ <img height="600px" src="https://user-images.githubusercontent.com/83460816/188241847-5931f5b9-d15b-482a-984a-a46790d763a9.png" />
 
 ## Project setup
 ```
